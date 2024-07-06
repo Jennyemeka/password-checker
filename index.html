@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password</title>
+
+    <style>
+      body {
+        text-align: center;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="password_page">
+      <p style="font-size: 30pt">THE MONK DIAMOND DISCOVERY</p>
+      <p>Please enter the Password to view this website.</p>
+      <p>Password:<input id="passwordbox" type="password" /></p>
+      <a
+        href="https://www.monkdiamonddiscovery.com"
+        onclick="return checkPassword()"
+      >
+        Click here to enter your Password and view monk diamond webpage.</a
+      >
+    </div>
+  </body>
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("passwordbox");
+      var passwordEntered = password.value;
+      if (passwordEntered == "Chimomo23@") {
+        return true;
+      }
+      alert("Access denied! incorrect password");
+      return fasle;
+    }
+  </script>
+</html>
